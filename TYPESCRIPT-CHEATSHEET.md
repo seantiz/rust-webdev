@@ -1,3 +1,5 @@
+[Go Back to Main Section](./README.md)
+
 ```plaintext
 TypeScript Cheatsheet for Rust Interop
 ├── Types
@@ -57,4 +59,4 @@ TypeScript Cheatsheet for Rust Interop
     ├── strictNullChecks
     └── noImplicitAny
 ```
-
+[Go Back to Main Section](./README.md)
