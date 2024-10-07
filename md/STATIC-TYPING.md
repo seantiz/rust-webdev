@@ -13,11 +13,11 @@ TypeScript and Rust both use static typing, but they approach it in different wa
 
 3. **Unit vs Void:** When you want a function to simply return without data in Typescript/Javascript,
    you use `void`. In Rust, a similar function would return unit; the unit type is an empty tuple
-   `()`.
+   `()`
 
 4. **Null and Undefined vs Option<T>:** A Typescript function can also return `null` or `undefined`,
    especially when you need to handle errors or failed callbacks within asynchronous tasks. The
-   closest equivalent to this in Rust is `Option<T>`.
+   closest equivalent to this in Rust is `Option<T>`
 
 5. **Interfaces vs Traits:** You've likely come across the age-old question "Is it better to use types
    or interfaces?" in Typescript. There's no such debate in Rust: Traits are to shaping structs in

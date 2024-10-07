@@ -9,10 +9,10 @@ In a nutshell, you'll find:
 2. Two paths to get comfortable with Rust: You can practice common ground between your working
    knowledge of webdev languages and
    [Rust by Example](https://doc.rust-lang.org/stable/rust-by-example/index.html), or you can take a
-   more analytical approach to grinding your way through a Rust Developer Map.
+   more analytical approach to grinding your way through a
+   [Rust Developer Map](https://roadmap.sh/rust).
 3. Further Reading on Rust concepts so you can get your processes and threads to inform each other
    meaningfully.
-4. Rust-JS-Interop tech radar
 
 <br>
 <br>
@@ -24,26 +24,27 @@ In a nutshell, you'll find:
 
 <!-- MarkdownTOC depth=4 -->
 
-- [Differences Between TypeScript and Rust](#differences-between-typescript-and-rust)
-    - [Syntax Differences](#syntax-differences)
-        - [Primitives and Basic Types](#primitives-and-basic-types)
-        - [More On Static Typing](#more-on-static-typing)
-        - [Set Operations](#set-operations)
-    - [Different Developer Experience](#different-developer-experience)
-        - [So Why the Tradeoffs in (Initial) Developer Experience?](#so-why-the-tradeoffs-in-developer-experience)
-        - [Some Add-ons for Better Rust DX](#some-add-ons-for-better-rust-dx)
-        - [Cleaning Out Cargo Artefacts](#cleaning-out-cargo-artefacts) ⚠️
-    - [Error Handling](#error-handling)
-    - [No Garbage Collector](#no-garbage-collector)
-    - [Rust's Ownership Model and Concurrency vs JavaScript's Async Approach](#rusts-ownership-model-and-concurrency-vs-javascripts-async-approach)
-        - [Ownership and Borrowing](#ownership-and-borrowing)
-        - [Threading](#threading)
-        - [Async/Await Runtime Cost](#asyncawait-runtime-cost)
-        - [Cancellation and Blocking](#cancellation-and-blocking)
-- [Feeling at Home in Rust](#feeling-at-home-in-rust)
-    - [Practice Functional Coding](#practice-functional-coding)
-    - [Grind Through a Rust Developer Map](#grind-through-a-rust-developer-map)
-    - [Two Good Books for Further Reading](#two-good-books-for-further-reading)
+-   [Differences Between TypeScript and Rust](#differences-between-typescript-and-rust)
+    -   [Syntax Differences](#syntax-differences)
+        -   [Primitives and Basic Types](#primitives-and-basic-types)
+        -   [More On Static Typing](#more-on-static-typing)
+        -   [Set Operations](#set-operations)
+    -   [Different Developer Experience](#different-developer-experience)
+        -   [So Why the Tradeoffs in (Initial) Developer Experience?](#so-why-the-tradeoffs-in-developer-experience)
+        -   [Some Add-ons for Better Rust DX](#some-add-ons-for-better-rust-dx)
+        -   [Cleaning Out Cargo Artefacts](#cleaning-out-cargo-artefacts) ⚠️
+    -   [Error Handling](#error-handling)
+    -   [No Garbage Collector](#no-garbage-collector)
+    -   [Rust's Ownership Model and Concurrency vs JavaScript's Async Approach](#rusts-ownership-model-and-concurrency-vs-javascripts-async-approach)
+        -   [Ownership and Borrowing](#ownership-and-borrowing)
+        -   [Threading](#threading)
+        -   [Async/Await Runtime Cost](#asyncawait-runtime-cost)
+        -   [Cancellation and Blocking](#cancellation-and-blocking)
+-   [Feeling at Home in Rust](#feeling-at-home-in-rust)
+    -   [Practice Functional Coding](#practice-functional-coding)
+    -   [Grind Through a Rust Developer Map](#grind-through-a-rust-developer-map)
+    -   [Two Good Books for Further Reading](#two-good-books-for-further-reading)
+
 <!-- /MarkdownTOC -->
 
 # Differences Between Typescript and Rust
@@ -57,12 +58,11 @@ explicit data types.
 
 ### Primitives and Basic Types
 
-You can [click here](/PRIMITIVES-BASIC-TYPES.md) for a full list of the basic types between
-Javascript, Typescript and Rust.
+Here is [a link to a full list of basic types](/md/PRIMITIVES-BASIC-TYPES.md) between Javascript, Typescript and Rust.
 
 ### More On Static Typing
 
-You can [click here](/STATIC-TYPING.md) to read this section in full.
+Here is [a link to the different approaches to static typing](/md/STATIC-TYPING.md) between Typescript and Rust.
 
 ### Set Operations
 
@@ -79,9 +79,12 @@ Rust's support for these two set operations is more nuanced:
 
 ## Different Developer Experience
 
-Just to be clear: "Developer Experience" here refers to quality of life between you, your IDE and runtime enviroments. The fated "DX"!
+Just to be clear: "Developer Experience" here refers to quality of life between you, your IDE and
+runtime enviroments. The fated "DX"!
 
-There's no getting around some noticeable tradeoffs in Rust, especially when it comes to compile times through Cargo. It's also harder to come by hot reloading between saves in a Rust dev environment (but a [debugging solution on this later](#some-add-ons-for-better-rust-dx)).
+There's no getting around some noticeable tradeoffs in Rust, especially when it comes to compile
+times through Cargo. It's also harder to come by hot reloading between saves in a Rust dev
+environment (but a [debugging solution on this later](#some-add-ons-for-better-rust-dx)).
 
 Cargo is Rust's package manager and build system. Aside from using the `rustc` command on single
 `.rs` scripts, Cargo is the way to build your Rust repository into final OS-native executables.
@@ -147,7 +150,7 @@ same directory as your `Cargo.toml` file regularly.
 
 There are two parts to comparing error handling here: Philosophy and Syntax.
 
-Click here for actual syntax-related differences between TS and Rust.
+Here is [a link to the error-handling syntax differences you need to know when moving from Typescript to Rust](/md/ERROR-HANDLING-SYNTAX.md).
 
 As far as philosophy (and the practical implications): If you're familiar with Erlang and Elixir
 school-of-thought on error handling, then Rust treating errors as values - and not exceptions like
@@ -228,14 +231,14 @@ fn main() {
 }
 ```
 
-Go to the sub-section above to get used to the syntax around this workflow in handling error and
-success outcomes as explicit values.
+[Go to the error-handling syntax subsection](/md/ERROR-HANDLING-SYNTAX.md) to get used to the syntax
+around this workflow.
 
 ### Sidenote: Proposal for new error-handling syntax in Javascript
 
-I did find a proposal to bring in a new operator to ECMAScript that blends the schools of thought
-above into one [here](https://github.com/arthurfiorette/proposal-safe-assignment-operator). It is
-potentially a nice addition to the JS developer experience, but it is still fundamentally working
+I did find [a link to a proposal to bring in a new operator to ECMAScript](https://github.com/arthurfiorette/proposal-safe-assignment-operator) that blends the schools of thought
+above into one. It is
+potentially a nice addition to the JS developer experience, but it's still fundamentally working
 within Javascript's runtime where errors are exceptions.
 
 ## No Garbage Collector
@@ -248,22 +251,14 @@ borrowing rules** at compile time. These rules are Rust's memory-safe guarantee;
 journey starts by working within that guarantee, so that you can later spot (for yourself, your
 domain and your end-user) when and where to work around the guarantee without breaking it.
 
-We'll touch upon ownership and borrowing briefly in the next section, but I'd argue it's more
-important to get comfortable with Rust inside your IDE early on in your journey. Later on, we can
-get deep into concepts and the shift in mindset to Rust memory management.
-
 ## Rust's Ownership Model and Concurrency vs JavaScript's Async Approach
 
-I feel it's beneficial to get straight to practicing Rust code and seeing some common ground between
-Rustdev and webdev in the section immediately after this, rather than trying to take in big,
-sweeping changes of concept all at once. But just know Rust's ownership and borrowing rules - as
-stated before - are the fundamental change in mindset you're taking on board in the long term.
+I'd suggest (again) that it's better to get straight to practicing Rust code and seeing some common
+ground between Rustdev and webdev in the section immediately after this, rather than trying to take
+in big, sweeping changes of concept all at once.
 
-In the short term, my advice is still the same: just find common ground between syntax, operators
-and types - i.e. get your feet under the table and feel at home in your Rust dev environment first -
-and observe how ownership and borrowing works in your code.
-
-I'll deliberately keep this last part of the 'Differences' chapter as brief as possible.
+Take this section in only briefly at first, then come back to it later if you need to do so. But just know Rust's ownership and borrowing rules - as stated before - are the fundamental change
+in mindset you're taking on board in the long term.
 
 ### Ownership and Borrowing
 
@@ -274,27 +269,25 @@ and relies on runtime checks.
 ### Threading
 
 Rust is a truly multithreaded language, while Javascript uses a single-threaded Event Loop. If you
-need more background on the event loop, task queues and microtask queues there are great videos on
-it here.
+need more background on the event loop, task queues and microtask queues then here is [a link to three great videos explaning the Event Loop](/md/EVENT-LOOP.md).
 
 ### Async/Await Runtime Cost
 
-Because Javascript's async/await is built on top of Promises and the Event Loop, you do pay some
-runtime costs in terms of object allocation and task scheduling. In comparison, Rust's async/await
-is zero-cost. How?
+Because Javascript's `Async/await` is built on top of Promises and the Event Loop, you do pay some
+runtime costs in terms of object allocation and task scheduling. In comparison, Rust's `Async/await`
+is zero-cost.
 
 If you're ever done game development in something like Godot, the idea of state machines may be
-familiar. The generated machine code from compiled Async/await statements in Rust is as efficient as
+familiar.
+
+The generated machine code from compiled `Async/await` statements in Rust is as efficient as
 hand-written state machines; the compiler knows exactly what state needs to be preserved between
 await points. The end result is zero additional runtime cost.
 
 ### Cancellation and Blocking
 
-It's hard to summarise the difference between writing in a language where asynchronous tasks were "a
-thing" from the language's birth, compared to being brought in after the language was launched. But
-async/await is a great example of how you don't need to bring in external dependencies or write any
-manual helper functions to do true thread cancellation and blocking with Rust's built-in features
-(the Drop trait in particular below).
+You don't need to bring in external dependencies or write any manual helper functions to do true
+thread cancellation and blocking with Rust's built-in features (the Drop trait in particular below).
 
 Here's an example of what I'd write in Rust:
 
@@ -357,9 +350,7 @@ console.log('Main: Done');
 ```
 
 I only realised how convenient this was by just getting to writing code, and in turn I started to
-see the trade-offs and compromises I'd gotten used to making in more mature languages that pre-dated
-async/await (I will always have a soft spot for Python's asyncio, for example, which is still a
-great library and language for the right domain).
+see the trade-offs and compromises I'd gotten used to making in more mature languages with a bigger legacy.
 
 I would suggest not dwelling on the deeper implications of the theory above for now, but it's your
 choice.
@@ -370,8 +361,25 @@ your preference!
 
 # Feeling at Home in Rust
 
+If this is your first time reading this, hopefully you skim-read the above when getting to this section. Now you've briefly covered the immediate differences to get to grips with, between webdev and Rustdev, you have to options to start really feeling at home in your IDE with .rs code from here on in:
+
 ## 1. Practice Functional Rust and Functional TS
+
+OPTION ONE: Start writing your own simple .rs scripts by following along with [Rust By Example website](https://doc.rust-lang.org/stable/rust-by-example/index.html). You can also see my efforts within this repo in the `/rustbyexample` directory.
+
+Some of the modules in the `/rustbyexample` folder are just me coding Rust By Example line-for-line for the sake of muscle memory and full credit goes to the Rust By Example site; other examples in this repo are me wanting to explore near-trivial features like pretty printing in Rust.
 
 ## 2. Grind Through a Rust Developer Map
 
+OPTION TWO: If you prefer to continue on with an analytical approach to absorbing Rust, you can always grind your way through the [Roadmaps' Rust Developer Map in the link here](https://roadmap.sh/rust) and come back to practicing .rs code later.
+
 ## Two Good Books for Further Reading
+
+Below are the two most helpful and comprehensive books I know on the language. I never pretend like I've read programming books all in one go, and here is no different.
+
+The second book on Atomics is easier to read in longer sittings over fewer days, but I personally read a little of programming books, then practice and finally come back to what I've read later. Rinse repeat.
+
+1. The Official Rust book ['Asynchronous Programming in Rust'](https://rust-lang.github.io/async-book/)
+2. Mara Bos' book ['Rust Atomics and Locks'](https://marabos.nl/atomics/)
+
+**Bos' book** is the reference for when you want to start living outside the rigid rules of ownership and borrowing. It's a level I've yet to master, but this is the best book to project a path that goes from coding within the rules to manipulating them when necessary within your domain.

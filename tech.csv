@@ -1,0 +1,13 @@
+name,ring,quadrant,isNew,description
+Deno, Trial, Platforms, FALSE, "Deno is a secure runtime for JavaScript and TypeScript built with Rust. It was created by Ryan Dahl"
+Biome, Hold, Tools, FALSE, "a fast linter, formatter and bundler for full-stack development."
+Tauri, Trial, Frameworks, FALSE, "Tauri is a framework for building desktop applications with web technologies, using Rust for the backend."
+Zed, Assess, Tools, TRUE, "Zed is a high-performance, multiplayer code editor written in Rust."
+Neon, Assess, Frameworks, TRUE, "A library for writing native Node.js modules in Rust. It allows you to create high-performance Node.js add-ons easily."
+Speedy Web Compiler, Hold, Tools, FALSE, "A super-fast Javascript/Typescript compiler written in Rust. It can be used as a drop-in replacement for Babel in many cases."
+Rocket, Hold, Frameworks, FALSE, "Rocket is a web framework written in Rust that can be used to build backend services for JavaScript frontends."
+Wasmer, Hold, Platforms, TRUE, "A WebAssembly runtime that can be used from both Rust and Javascript, allowing you to run WebAssembly modules in various environments."
+wasm-bindgen, Hold, Tools, TRUE, "A tool that facilitates high-level interactions between Wasm modules and Javascript. It's often used when compiling Rust to WebAssembly."
+Yew, Hold, Frameworks, TRUE, "A modern web framework for creating multi-threaded front-end web apps using WebAssembly. It's written in Rust and uses concepts similar to React."
+Parcel, Hold, Tools, TRUE, "Parcel v2 bundler has been rewritten in Rust for improved performance."
+ESBuild-RS, Hold, Tools, FALSE, "Rust bindings for ESBuild. The Rust bindings allow for easy integration of ESBuild into Rust projects."
