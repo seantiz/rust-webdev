@@ -1,4 +1,4 @@
-# Rust-Typescript Interop Guide
+# Get Started with Your Next Rust-Typescript-Javascript Project 
 
 This is my personal recap on writing cross-platform between Rust, Typescript and Javascript.
 
